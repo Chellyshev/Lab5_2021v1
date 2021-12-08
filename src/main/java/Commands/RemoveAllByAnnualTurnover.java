@@ -22,8 +22,8 @@ public class RemoveAllByAnnualTurnover {
         for(Organization organization: CollectionControl.getCollection()){
             if(Objects.equals(organization.getAnnualTurnover(), turnover)) CollectionControl.getCollection().remove(organization);
         }
-        if (CollectionControl.getCollection().size() == startSize) System.out.println("Не найдено элементов с заданным Annual Turnover");
-        else System.out.println("Элементы успешно удалены");
+        if (CollectionControl.getCollection().size() == startSize) System.out.println("РќРµ РЅР°Р№РґРµРЅРѕ СЌР»РµРјРµРЅС‚РѕРІ СЃ Р·Р°РґР°РЅРЅС‹Рј Annual Turnover");
+        else System.out.println("Р­Р»РµРјРµРЅС‚С‹ СѓСЃРїРµС€РЅРѕ СѓРґР°Р»РµРЅС‹");
 
     }
 }

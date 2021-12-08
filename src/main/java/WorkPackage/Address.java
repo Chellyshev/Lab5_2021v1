@@ -1,8 +1,8 @@
 package WorkPackage;
 
 public class Address {
-    private String street; //Длина строки не должна быть больше 108, Поле не может быть null
-    private Location town; //Поле не может быть null
+    private String street; //Р”Р»РёРЅР° СЃС‚СЂРѕРєРё РЅРµ РґРѕР»Р¶РЅР° Р±С‹С‚СЊ Р±РѕР»СЊС€Рµ 108, РџРѕР»Рµ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ null
+    private Location town; //РџРѕР»Рµ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ null
 
     public Address(String street, Location town)
     {

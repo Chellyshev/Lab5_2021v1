@@ -13,12 +13,12 @@ public class RemoveLower {
      * A method for removing from the collection all items less than the specified one.
      *
      */
-        public static void RemoveLower()
-        {
-            int startSize = CollectionControl.getCollectionSize();
-            Organization inputorganization = OrganizationGenerator.generate();
-            CollectionControl.getCollection().removeIf(n -> (n.compareTo(inputorganization) < 0));
-            if (CollectionControl.getCollection().size() == startSize) System.out.println("Íå íàéäåíî ýëåìåíòîâ ìåíüøå çàäàííîãî");
-            else System.out.println("Ýëåìåíòû óñïåøíî óäàëåíû");
-        }
+    public static void RemoveLower()
+    {
+        int startSize = CollectionControl.getCollectionSize();
+        Organization inputorganization = OrganizationGenerator.generate();
+        CollectionControl.getCollection().removeIf(n -> (n.compareTo(inputorganization) < 0));
+        if (CollectionControl.getCollection().size() == startSize) System.out.println("ÐÐµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼ÐµÐ½ÑŒÑˆÐµ Ð·Ð°Ð´Ð°Ð½Ð½Ð¾Ð³Ð¾");
+        else System.out.println("Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ ÑƒÐ´Ð°Ð»ÐµÐ½Ñ‹");
+    }
 }

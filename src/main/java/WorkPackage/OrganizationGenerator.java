@@ -12,30 +12,30 @@ public class OrganizationGenerator {
             Scanner scanner = new Scanner(System.in);
             String name;
             do {
-                System.out.println("Введите имя Организации:");
+                System.out.println("Р’РІРµРґРёС‚Рµ РёРјСЏ РћСЂРіР°РЅРёР·Р°С†РёРё:");
                 name = scanner.nextLine();
             } while (name.isEmpty());
 
             Long x = null;
             do {
-                System.out.println("Введите координату x");
+                System.out.println("Р’РІРµРґРёС‚Рµ РєРѕРѕСЂРґРёРЅР°С‚Сѓ x");
                 try {
                     x = Long.valueOf(scanner.nextLine());
                     if (x <= -259) {
-                        System.out.println("Число должно быть больше -259");
+                        System.out.println("Р§РёСЃР»Рѕ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ Р±РѕР»СЊС€Рµ -259");
                     }
                 } catch (NumberFormatException e) {
-                    System.out.println("Ошибка ввода числа");
+                    System.out.println("РћС€РёР±РєР° РІРІРѕРґР° С‡РёСЃР»Р°");
                 }
             } while (x == null || x <= -259);
 
             int y = 0;
             while (true) {
-                System.out.println("Введите координату Y:");
+                System.out.println("Р’РІРµРґРёС‚Рµ РєРѕРѕСЂРґРёРЅР°С‚Сѓ Y:");
                 try {
                     y = Integer.valueOf(scanner.nextLine());
                 } catch (NumberFormatException e) {
-                    System.out.println("Ошибка ввода числа");
+                    System.out.println("РћС€РёР±РєР° РІРІРѕРґР° С‡РёСЃР»Р°");
                     continue;
                 }
                 break;
@@ -43,28 +43,28 @@ public class OrganizationGenerator {
 
             Float annualTurnover = null;
             do {
-                System.out.println("Введите ежегодный оборот");
+                System.out.println("Р’РІРµРґРёС‚Рµ РµР¶РµРіРѕРґРЅС‹Р№ РѕР±РѕСЂРѕС‚");
                 try {
                     annualTurnover = Float.valueOf(scanner.nextLine());
                     if (annualTurnover < 0) {
-                        System.out.println("Число должно быть больше 0");
+                        System.out.println("Р§РёСЃР»Рѕ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ Р±РѕР»СЊС€Рµ 0");
                     }
                 } catch (NumberFormatException e) {
-                    System.out.println("Ошибка ввода числа");
+                    System.out.println("РћС€РёР±РєР° РІРІРѕРґР° С‡РёСЃР»Р°");
                 }
             } while (annualTurnover == null || annualTurnover < 0);
 
             String fullName = null;
-            System.out.println("Введите полное имя");
+            System.out.println("Р’РІРµРґРёС‚Рµ РїРѕР»РЅРѕРµ РёРјСЏ");
             fullName = scanner.nextLine();
 
             Long employeesCount = null;
             while (true) {
-                System.out.println("Введите координату кол-во рабочих:");
+                System.out.println("Р’РІРµРґРёС‚Рµ РєРѕРѕСЂРґРёРЅР°С‚Сѓ РєРѕР»-РІРѕ СЂР°Р±РѕС‡РёС…:");
                 try {
                     employeesCount = Long.valueOf(scanner.nextLine());
                 } catch (NumberFormatException e) {
-                    System.out.println("Ошибка ввода числа");
+                    System.out.println("РћС€РёР±РєР° РІРІРѕРґР° С‡РёСЃР»Р°");
                     continue;
                 }
                 break;
@@ -73,15 +73,15 @@ public class OrganizationGenerator {
 
             OrganizationType organizationType = null;
             while (true) {
-                System.out.println("Введите поле OrganizationType");
-                System.out.println("Доступные варианты:");
+                System.out.println("Р’РІРµРґРёС‚Рµ РїРѕР»Рµ OrganizationType");
+                System.out.println("Р”РѕСЃС‚СѓРїРЅС‹Рµ РІР°СЂРёР°РЅС‚С‹:");
                 for (OrganizationType organizationType1 : OrganizationType.values())
                     System.out.println(organizationType1.toString());
                 try {
                     String string = scanner.nextLine();
                     organizationType = OrganizationType.valueOf(string);
                 } catch (IllegalArgumentException e) {
-                    System.out.println("Ошибка ввода");
+                    System.out.println("РћС€РёР±РєР° РІРІРѕРґР°");
                     continue;
                 }
                 break;
@@ -89,30 +89,30 @@ public class OrganizationGenerator {
 
             String street = null;
             do {
-                System.out.println("Введите имя Организации:");
+                System.out.println("Р’РІРµРґРёС‚Рµ РёРјСЏ РћСЂРіР°РЅРёР·Р°С†РёРё:");
                 street = scanner.nextLine();
                 if (street.length() > 108)
-                    System.out.println("Название улицы не может быть больше 108 символов");
+                    System.out.println("РќР°Р·РІР°РЅРёРµ СѓР»РёС†С‹ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ Р±РѕР»СЊС€Рµ 108 СЃРёРјРІРѕР»РѕРІ");
             } while (street.isEmpty() || street.length() > 108);
 
             int x1 = 0;
             while (true) {
-                System.out.println("Введите координату x адреса:");
+                System.out.println("Р’РІРµРґРёС‚Рµ РєРѕРѕСЂРґРёРЅР°С‚Сѓ x Р°РґСЂРµСЃР°:");
                 try {
                     x1 = Integer.valueOf(scanner.nextLine());
                 } catch (NumberFormatException e) {
-                    System.out.println("Ошибка ввода числа");
+                    System.out.println("РћС€РёР±РєР° РІРІРѕРґР° С‡РёСЃР»Р°");
                     continue;
                 }
                 break;
             }
             double y1 = 0;
             while (true) {
-                System.out.println("Введите координату y адреса:");
+                System.out.println("Р’РІРµРґРёС‚Рµ РєРѕРѕСЂРґРёРЅР°С‚Сѓ y Р°РґСЂРµСЃР°:");
                 try {
                     y1 = Double.valueOf(scanner.nextLine());
                 } catch (NumberFormatException e) {
-                    System.out.println("Ошибка ввода числа");
+                    System.out.println("РћС€РёР±РєР° РІРІРѕРґР° С‡РёСЃР»Р°");
                     continue;
                 }
                 break;
@@ -120,21 +120,21 @@ public class OrganizationGenerator {
 
             long z1 = 0;
             while (true) {
-                System.out.println("Введите координату z адреса:");
+                System.out.println("Р’РІРµРґРёС‚Рµ РєРѕРѕСЂРґРёРЅР°С‚Сѓ z Р°РґСЂРµСЃР°:");
                 try {
                     z1 = Long.valueOf(scanner.nextLine());
                 } catch (NumberFormatException e) {
-                    System.out.println("Ошибка ввода числа");
+                    System.out.println("РћС€РёР±РєР° РІРІРѕРґР° С‡РёСЃР»Р°");
                     continue;
                 }
                 break;
             }
             String townName = null;
             do {
-                System.out.println("Введите город:");
+                System.out.println("Р’РІРµРґРёС‚Рµ РіРѕСЂРѕРґ:");
                 townName = scanner.nextLine();
                 if (townName.length() > 637)
-                    System.out.println("Название улицы не может быть больше 637 символов");
+                    System.out.println("РќР°Р·РІР°РЅРёРµ СѓР»РёС†С‹ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ Р±РѕР»СЊС€Рµ 637 СЃРёРјРІРѕР»РѕРІ");
             } while (townName.isEmpty() || townName.length() > 637);
             Location location = new Location(x1, y1, z1, townName);
             Address address = new Address(street, location);
@@ -142,7 +142,7 @@ public class OrganizationGenerator {
             Integer Id = (new Random()).nextInt();
             organization = new Organization(Id, name, coordinates, LocalDateTime.now(), annualTurnover, fullName, employeesCount, organizationType, address);
         } catch (NoSuchElementException e) {
-            System.out.println("Ввод был завершён...");
+            System.out.println("Р’РІРѕРґ Р±С‹Р» Р·Р°РІРµСЂС€С‘РЅ...");
         }
         return organization;
     }

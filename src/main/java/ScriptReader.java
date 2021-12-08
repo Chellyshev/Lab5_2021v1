@@ -16,15 +16,15 @@ public class ScriptReader {
         File script = new File(filePath);
 
         if (!script.exists() || !script.isFile()) {
-            System.out.println(("Ôàéë ïî  ïóòè " + script.getAbsolutePath() + " íå ñóùåñòâóåò."));
+            System.out.println(("Ð¤Ð°Ð¹Ð» Ð¿Ð¾  Ð¿ÑƒÑ‚Ð¸ " + script.getAbsolutePath() + " Ð½Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚."));
             return null;
         }
         if (!script.canRead()) {
-            System.out.println("Ôàéë çàùèù¸í îò ÷òåíèÿ.");
+            System.out.println("Ð¤Ð°Ð¹Ð» Ð·Ð°Ñ‰Ð¸Ñ‰Ñ‘Ð½ Ð¾Ñ‚ Ñ‡Ñ‚ÐµÐ½Ð¸Ñ.");
             return null;
         }
         if (script.length() == 0) {
-            System.out.println("Ñêðèïò íå ñîäåðæèò êîìàíä.");
+            System.out.println("Ð¡ÐºÑ€Ð¸Ð¿Ñ‚ Ð½Ðµ ÑÐ¾Ð´ÐµÑ€Ð¶Ð¸Ñ‚ ÐºÐ¾Ð¼Ð°Ð½Ð´.");
             return null;
         }
         return script;
@@ -41,13 +41,13 @@ public class ScriptReader {
         File script = checkFile(filePath);
         try (InputStreamReader scriptReader1 = new InputStreamReader(new FileInputStream(filePath), "UTF-8")) {
             BufferedReader scriptReader = new BufferedReader(scriptReader1);
-            System.out.println("Àíàëèç ôàéëà " + script.getAbsolutePath());
+            System.out.println("ÐÐ½Ð°Ð»Ð¸Ð· Ñ„Ð°Ð¹Ð»Ð° " + script.getAbsolutePath());
             String scriptCommand = scriptReader.readLine();
             while (scriptCommand != null) {
                 currentFile = script;
                 if (commandCheck(scriptCommand)) {
                     if (scripStack.search(script.getAbsolutePath()) != -1) {
-                        System.out.println("Îáíàðóæåíà ðåêóðñèÿ âûçîâà ñêðèïòîâ:");
+                        System.out.println("ÐžÐ±Ð½Ð°Ñ€ÑƒÐ¶ÐµÐ½Ð° Ñ€ÐµÐºÑƒÑ€ÑÐ¸Ñ Ð²Ñ‹Ð·Ð¾Ð²Ð° ÑÐºÑ€Ð¸Ð¿Ñ‚Ð¾Ð²:");
                         for (String file : scripStack) System.out.println("---> " + file);
                         System.out.println("---> " + script.getAbsolutePath());
                         scripStack.clear();

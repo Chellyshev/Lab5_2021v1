@@ -1,7 +1,7 @@
 package WorkPackage;
 
 public class Coordinates {
-    private Long x; //Значение поля должно быть больше -259, Поле не может быть null
+    private Long x; //Р—РЅР°С‡РµРЅРёРµ РїРѕР»СЏ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ Р±РѕР»СЊС€Рµ -259, РџРѕР»Рµ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ null
     private int y;
 
     public Long getX() {

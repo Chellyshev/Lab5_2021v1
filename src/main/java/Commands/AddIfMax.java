@@ -21,6 +21,6 @@ public class AddIfMax {
             else lower*=0;
         }
         if(lower == 1) CollectionControl.getCollection().add(startUp);
-        else System.out.println("Мы нашли элемент больше заданного");
+        else System.out.println("РњС‹ РЅР°С€Р»Рё СЌР»РµРјРµРЅС‚ Р±РѕР»СЊС€Рµ Р·Р°РґР°РЅРЅРѕРіРѕ");
     }
 }

@@ -13,7 +13,7 @@ public class Save {
      */
     public static void SaveCollection() throws IOException {
         XMLController.writeToXMLusingJDOM();
-        System.out.println("Файл успешно сохранен");
+        System.out.println("Р¤Р°Р№Р» СѓСЃРїРµС€РЅРѕ СЃРѕС…СЂР°РЅРµРЅ");
 
     }
 }

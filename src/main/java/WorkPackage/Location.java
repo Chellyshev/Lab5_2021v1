@@ -4,7 +4,7 @@ public class Location {
     private int x;
     private double y;
     private long z;
-    private String name; //Длина строки не должна быть больше 637, Поле не может быть null
+    private String name; //Р”Р»РёРЅР° СЃС‚СЂРѕРєРё РЅРµ РґРѕР»Р¶РЅР° Р±С‹С‚СЊ Р±РѕР»СЊС€Рµ 637, РџРѕР»Рµ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ null
 
     public Location(int x, double y, long z, String name)
     {

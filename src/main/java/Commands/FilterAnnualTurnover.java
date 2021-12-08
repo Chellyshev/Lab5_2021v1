@@ -18,7 +18,7 @@ public class FilterAnnualTurnover {
             show = true;
             if(organization.getAnnualTurnover().compareTo(turnover) < 0) System.out.println(organization);
         }
-        if (!show) System.out.println("Íåò ýëåìåíòà ñ ìåíüøèì Annual Turnover");
+        if (!show) System.out.println("ÐÐµÑ‚ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð° Ñ Ð¼ÐµÐ½ÑŒÑˆÐ¸Ð¼ Annual Turnover");
 
 
     }

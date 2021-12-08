@@ -24,10 +24,10 @@ public class UpdateID {
                 organization = OrganizationGenerator.generate();
                 organization.setId(id);
                 CollectionControl.getCollection().add(organization);
-                System.out.println("Элемент успешно заменен");
+                System.out.println("Р­Р»РµРјРµРЅС‚ СѓСЃРїРµС€РЅРѕ Р·Р°РјРµРЅРµРЅ");
 
             }
         }
-        if (replace == false) System.out.println("Элемента с данным id не существует");
+        if (replace == false) System.out.println("Р­Р»РµРјРµРЅС‚Р° СЃ РґР°РЅРЅС‹Рј id РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚");
     }
 }

@@ -12,11 +12,11 @@ public class main {
 
         Scanner scanner = new Scanner(System.in);
         String command = null;
-        System.out.println("Ïðîâåðêà ïóòè ôàéëà");
+        System.out.println("ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð¿ÑƒÑ‚Ð¸ Ñ„Ð°Ð¹Ð»Ð°");
         String filePath = System.getenv("Lab5");
-        System.out.println("Ïóòü, çàäàííûé â ïåðåìåííîé îêðóæåíèÿ LabFilePath: " + filePath);
+        System.out.println("ÐŸÑƒÑ‚ÑŒ, Ð·Ð°Ð´Ð°Ð½Ð½Ñ‹Ð¹ Ð² Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ð¾Ð¹ Ð¾ÐºÑ€ÑƒÐ¶ÐµÐ½Ð¸Ñ LabFilePath: " + filePath);
         if (filePath == null) {
-            System.out.println("Ïåðåìåííàÿ îêðóæåíèÿ íå çàäàíà");
+            System.out.println("ÐŸÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ð°Ñ Ð¾ÐºÑ€ÑƒÐ¶ÐµÐ½Ð¸Ñ Ð½Ðµ Ð·Ð°Ð´Ð°Ð½Ð°");
             return;
         }
         int id;
@@ -25,7 +25,7 @@ public class main {
         String[] commands = null;
         XMLController.ReadFile();
         while (true) {
-            System.out.print("Ââåäèòå êîìàíäó >>");
+            System.out.print("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¼Ð°Ð½Ð´Ñƒ >>");
             command = scanner.nextLine();
             try {
                 CommandsControl.setCommand(command);

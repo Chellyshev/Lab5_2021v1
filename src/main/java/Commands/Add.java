@@ -15,7 +15,7 @@ public class Add {
     {
         int size = CollectionControl.getCollectionSize();
         CollectionControl.getCollection().add(OrganizationGenerator.generate());
-        if (CollectionControl.getCollectionSize() == size) System.out.println("Ошибка добавления элемента");
-        else System.out.println("Элемент успешно добавлен");
+        if (CollectionControl.getCollectionSize() == size) System.out.println("РћС€РёР±РєР° РґРѕР±Р°РІР»РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р°");
+        else System.out.println("Р­Р»РµРјРµРЅС‚ СѓСЃРїРµС€РЅРѕ РґРѕР±Р°РІР»РµРЅ");
     }
 }

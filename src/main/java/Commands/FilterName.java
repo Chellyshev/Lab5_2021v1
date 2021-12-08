@@ -19,7 +19,7 @@ public class FilterName {
                 System.out.println(organization);
                 show = true;
             }
-            if (!show) System.out.println("Нет элементов начинающихся на "+name);
+            if (!show) System.out.println("РќРµС‚ СЌР»РµРјРµРЅС‚РѕРІ РЅР°С‡РёРЅР°СЋС‰РёС…СЃСЏ РЅР° "+name);
         }
 
 

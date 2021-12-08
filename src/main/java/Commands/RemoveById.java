@@ -20,10 +20,10 @@ public class RemoveById {
             {
                 remove = true;
                 CollectionControl.getCollection().remove(organization);
-                System.out.println("Элемент успешно удален");
+                System.out.println("Р­Р»РµРјРµРЅС‚ СѓСЃРїРµС€РЅРѕ СѓРґР°Р»РµРЅ");
 
             }
         }
-        if (remove == false) System.out.println("Элемента с данным id не существует");
+        if (remove == false) System.out.println("Р­Р»РµРјРµРЅС‚Р° СЃ РґР°РЅРЅС‹Рј id РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚");
     }
 }
