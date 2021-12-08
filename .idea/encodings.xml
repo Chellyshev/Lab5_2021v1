@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java/CollectionControl/CollectionControl.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/CollectionControl/XMLController.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Commands/Add.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Commands/AddIfMax.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Commands/CommandsInfo.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Commands/FilterAnnualTurnover.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Commands/FilterName.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Commands/Help.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Commands/History.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Commands/RemoveAllByAnnualTurnover.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Commands/RemoveById.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Commands/RemoveLower.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Commands/Save.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Commands/Show.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Commands/UpdateID.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/CommandsControl.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ScriptReader.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/WorkPackage/Address.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/WorkPackage/Coordinates.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/WorkPackage/Location.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/WorkPackage/Organization.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/WorkPackage/OrganizationGenerator.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/WorkPackage/OrganizationType.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/main.java" charset="windows-1251" />
+  </component>
+</project>

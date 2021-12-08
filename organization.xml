@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Organizations>
+  <list id="1747890127">
+    <name>421</name>
+    <coordinates_x>241</coordinates_x>
+    <coordinates_y>532</coordinates_y>
+    <creation_date>2021-10-25T00:18:18.978403400</creation_date>
+    <annual_turnover>214.0</annual_turnover>
+    <full_name>532</full_name>
+    <employees_count>124</employees_count>
+    <organization_type>TRUST</organization_type>
+    <address_x>5432</address_x>
+    <address_y>235.0</address_y>
+    <address_z>32</address_z>
+    <address_name>532</address_name>
+    <street_name>341</street_name>
+  </list>
+  <list id="-1084478167">
+    <name>4</name>
+    <coordinates_x>4</coordinates_x>
+    <coordinates_y>4</coordinates_y>
+    <creation_date>2021-10-25T03:12:57.123735100</creation_date>
+    <annual_turnover>543443.0</annual_turnover>
+    <full_name>4354</full_name>
+    <employees_count>435</employees_count>
+    <organization_type>TRUST</organization_type>
+    <address_x>3523</address_x>
+    <address_y>325.0</address_y>
+    <address_z>324</address_z>
+    <address_name>532</address_name>
+    <street_name>3525</street_name>
+  </list>
+</Organizations>
